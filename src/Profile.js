@@ -48,10 +48,10 @@ const Profile = () => {
       <p>{job}</p>
       <p>{text}</p>
       <div className="btn-group">
-        <button className="btn-prev" onClick={prevEntry}>Prev</button>
-        <button className="btn-next" onClick={nextEntry}>Next</button>
+        <button className="btn btn-prev" onClick={prevEntry}>Prev</button>
+        <button className="btn btn-next" onClick={nextEntry}>Next</button>
       </div>
-      <button className="btn-random" onClick={randomEntry}>Random</button>
+      <button className="btn btn-random" onClick={randomEntry}>Random</button>
     </article>
   )
 }
