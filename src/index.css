@@ -19,8 +19,14 @@ body {
 .btn {
   cursor: pointer;
   display: inline-block;
-  padding: 0.5em 1.25em;
+  padding: 0.2em 1em;
   text-transform: uppercase;
+}
+
+.title {
+  padding: 1em 0;
+  border-bottom: 3px solid #333;
+  margin-bottom: 2em;
 }
 
 .team-profile {
@@ -37,6 +43,7 @@ body {
   border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 2em;
+  border: 5px solid steelblue;
 }
 
 .profile-img {
@@ -46,4 +53,27 @@ body {
   object-fit: cover;
   border-radius: 50%;
   position: relative;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: steelblue;
+  color: #fff;
+}
+
+.btn-prev,.btn-next {
+  font-size: 1.2rem;
+}
+
+.btn-random {
+  font-size: 2.5rem;
+  padding: 0 0.5em;
 }

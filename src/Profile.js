@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import biographies from './data/data';
+import { FaChevronLeft, FaChevronRight, FaDice, FaQuoteRight } from "react-icons/fa"
 
 const Profile = () => {
   const [index, setIndex] = useState(0)
@@ -42,16 +43,18 @@ const Profile = () => {
     <article className="team-profile">
       <div className="img-container">
         <img src={image} alt={name} className="profile-img"/>
-        <span className="quote-icon"></span>
+        <span className="quote-icon">
+          <FaQuoteRight />
+        </span>
       </div>
       <h3>{name}</h3>
       <p>{job}</p>
       <p>{text}</p>
       <div className="btn-group">
-        <button className="btn btn-prev" onClick={prevEntry}>Prev</button>
-        <button className="btn btn-next" onClick={nextEntry}>Next</button>
+        <button className="btn btn-prev" onClick={prevEntry}><FaChevronLeft/></button>
+        <button className="btn btn-next" onClick={nextEntry}><FaChevronRight/></button>
       </div>
-      <button className="btn btn-random" onClick={randomEntry}>Random</button>
+      <button className="btn btn-random" onClick={randomEntry}><FaDice/></button>
     </article>
   )
 }
